@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Inter', sans-serif;
   /* font-family: "Noto Sans", sans-serif; */
   transition: all 0.3s ease;
 }
@@ -16,11 +16,11 @@
   --btn_text: #ffffff;
 }
 
-/* ! Header Section */
-
-body{
+body {
   background-color: #f5f8ff;
 }
+
+/* ! Header Section */
 
 .header {
   display: flex;
@@ -52,7 +52,7 @@ nav ul li {
   border-radius: 10px;
 }
 
-.logo:hover{
+.logo:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -83,145 +83,240 @@ nav ul li:first-child {
 
 /* ! Hero Section */
 
-.hero{
+.hero {
   max-width: 1440px;
   margin: 120px auto 0;
   padding: 0 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Noto Serif", serif;
+  font-family: 'Noto Serif', serif;
 }
 
-.hero_title, .hero_img{
+.hero_title,
+.hero_img {
   width: 50%;
 }
 
-.hero_img img{
+.hero_img img {
   width: 100%;
   display: block;
 }
 
-.hero_title h1{
+.hero_title h1 {
   font-size: 65px;
   font-weight: 700;
   color: var(--text_primary);
   padding-bottom: 20px;
 }
 
-.hero_title h1 span{
+.hero_title h1 span {
   color: var(--primary_color);
 }
 
-.hero_title p{
+.hero_title p {
   font-size: 24px;
   color: var(--content_text);
   text-align: justify;
   padding-right: 3%;
 }
 
+/* ! Our Plants Section */
 
+.plants {
+  margin: 120px auto 0;
+  max-width: 1440px;
+  padding: 0 2%;
+  text-align: center;
+}
 
+.plants h1 {
+  font-size: 65px;
+  color: var(--text_primary);
+  padding-bottom: 20px;
+  font-family: 'Noto Serif', serif;
+}
 
+.plants span {
+  color: var(--primary_color);
+}
 
+.plants p {
+  font-size: 24px;
+  color: var(--content_text);
+  padding: 0 5%;
+  margin-bottom: 50px;
+}
 
+.card_div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
 
+.card img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
 
+.card img:hover {
+  transform: rotate(2deg);
+  cursor: pointer;
+}
 
+.card h3,
+.card h4 {
+  color: var(--text_primary);
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
 
+.card h4 {
+  font-weight: 700;
+}
 
+.card button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--primary_color);
+  border: 1px solid var(--primary_color);
+  color: var(--btn_text);
+}
 
-
-
-
-
-
-
+.card button:hover {
+  box-shadow: 5px 5px 5px 5px #ff5e0080;
+  cursor: pointer;
+  transform: scale(1.05);
+}
 
 /* ! Laptop 1200px */
 
 @media (max-width: 1200px) {
-  .hero{
+  .hero {
     margin: 100px auto 0;
   }
 
-  .hero_title h1{
+  .hero_title h1 {
     font-size: 55px;
   }
 
-  .hero_title p{
+  .hero_title p {
     font-size: 20px;
   }
+
 }
 
 /* ! Tablet 992px */
 
 @media (max-width: 992px) {
-  .header{
+  .header {
     padding: 0 4%;
   }
 
-  nav ul{
+  nav ul {
     display: none;
   }
 
-  .balance{
+  .balance {
     padding: 15px 20px;
   }
 
-  .hero{
+  .hero {
     margin: 60px auto 0;
     padding: 0 4%;
     flex-direction: column-reverse;
     gap: 30px;
   }
 
-  .hero_title h1{
+  .hero_title h1 {
     text-align: left;
-    /* font-size: 30px; */
   }
 
-  .hero_title p{
+  .hero_title p {
     padding-right: 8%;
   }
 
-  .hero_title, .hero_img{
+  .hero_title,
+  .hero_img {
     width: 100%;
+  }
+
+  .plants{
+    padding: 0 4%;
+    margin: 80px auto 0;
+  }
+
+  .card_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plants h1{
+    font-size: 55px;
+  }
+
+  .plants p{
+    font-size: 20px;
   }
 }
 
 /* ! Tablet 768px */
 
 @media (max-width: 768px) {
-  .hero{
+  .hero {
     margin: 20px auto 0;
   }
 
-  .hero_title h1{
+  .hero_title h1 {
     font-size: 35px;
   }
 
-  .hero_title p{
+  .hero_title p {
     font-size: 16px;
+  }
+
+  .plants{
+    margin: 60px auto 0;
+  }
+
+  .plants h1{
+    font-size: 35px;
+  }
+
+  .plants p{
+    font-size: 14px;
+  }
+
+  .card h3, .card h4{
+    font-size: 18px;
   }
 }
 
 /* ! Mobile Small 375px */
 
 @media (max-width: 375px) {
-  .header{
+  .header {
     margin: 20px auto 0;
   }
 
-  .logo img{
+  .logo img {
     width: 100px;
   }
 
-  .hero_title h1{
+  .hero_title h1 {
     font-size: 30px;
   }
 
-  .hero_title p{
+  .hero_title p {
     font-size: 14px;
+  }
+
+  .plants{
+    margin: 30px auto 0;
+  }
+
+  .card h3, .card h4{
+    font-size: 16px;
   }
 }
