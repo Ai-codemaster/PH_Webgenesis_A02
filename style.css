@@ -422,6 +422,54 @@ nav ul li:first-child {
   transform: scale(1.03);
 }
 
+/* ! Footer Section Start */
+
+.footer{
+  max-width: 1440px;
+  margin: 60px auto;
+  padding: 0 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--content_text);
+  font-size: 20px;
+  
+}
+
+.footer_discription p{
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.footer_nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer ul li{
+  list-style: none;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.footer ul li:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.social_img{
+  text-align: center;
+}
+
+.social_img img{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.social_img img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 
 
 
@@ -491,6 +539,14 @@ nav ul li:first-child {
 
   .latest_deals p {
     margin-bottom: 60px;
+  }
+
+  .footer_discription p{
+    font-size: 20px;
+  }
+
+  .social_img img{
+    margin: 0 10px;
   }
 }
 
@@ -625,6 +681,16 @@ nav ul li:first-child {
   .email_submit{
     margin-top: 80px;
   }
+
+  .footer{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer_discription p{
+    padding: 0 10%;
+  }
 }
 
 /* ! Tablet 768px */
@@ -694,6 +760,15 @@ nav ul li:first-child {
 
   .submit{
     padding: 15px 20px;
+  }
+
+  .footer{
+    margin: 30px auto;
+    gap: 20px;
+  }
+
+  .footer_nav{
+    grid-template-columns: 1fr;
   }
 }
 
@@ -777,5 +852,13 @@ nav ul li:first-child {
 
   .email_submit{
     margin-top: 30px;
+  }
+
+  .footer_discription p{
+    font-size: 16px;
+  }
+
+  .footer_nav ul li{
+    font-size: 14px;
   }
 }
